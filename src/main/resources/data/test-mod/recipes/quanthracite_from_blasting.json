@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "test-mod:quanthracite_ore"
+  },
+  "result": "test-mod:quanthracite",
+  "experience": 1.0,
+  "cookingtime": 100
+}
