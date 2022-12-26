@@ -30,6 +30,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> QUANTHRACITE_ORE = registerBlock("quanthracite_ore",
             () -> new ModOreBlock(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(6f)));
 
+    //creates block of quanthracite
+    public static final RegistryObject<Block> QUANTHRACITE_BLOCK = registerBlock("quanthracite_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

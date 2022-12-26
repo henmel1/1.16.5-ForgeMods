@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "test-mod:quanthracite_block"
+    }
+  ],
+  "result": {
+    "item": "test-mod:quanthracite",
+    "count": 9
+  }
+}
