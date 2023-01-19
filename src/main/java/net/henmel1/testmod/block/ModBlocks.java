@@ -34,6 +34,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> QUANTHRACITE_BLOCK = registerBlock("quanthracite_block",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
 
+    //creates unbreakable dirt
+    public static final RegistryObject<Block> UNBREAKABLE_DIRT = registerBlock("unbreakable_dirt",
+            () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(-1).hardnessAndResistance(-1f)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
